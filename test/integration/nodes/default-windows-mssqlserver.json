@@ -2,9 +2,12 @@
   "id": "default-windows-mssqlserver",
   "chef_environment": "_default",
   "automatic": {
-    "ipaddress": "172.28.128.22",
+    "ipaddress": [
+      "10.0.2.15",
+      "172.28.128.23"
+    ],
     "platform": "windows",
-    "fqdn": "WIN-890I24U3LD9",
+    "fqdn": "WIN-AK6UNCGJS1F",
     "recipes": [
       "test_kitchen_mssql_helpers::server"
     ]
