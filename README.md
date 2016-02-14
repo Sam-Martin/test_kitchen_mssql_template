@@ -11,6 +11,7 @@ You want to test a cookbook/PowerShell script/etc using test-kitche, but it requ
 # Usage
 Copy the files from this repository into your cookbook's repo (merging files as necessary), then use the platform named 'windows-2012r2' in .kitchen.yml as your test bed. Replace the existing tests in default with the tests you wish to run and add a run_list that specifies your cookbook or other kitchen provisioners as you desire!
 
+## Connectivity
 You will presumably need to populate the MSSQL server's IP in your cookbook/script somewhere. You can do this in Chef like so
 ```
 search_query = 'run_list:*test_kitchen_mssql_helpers??server*'
@@ -18,6 +19,12 @@ sql_server_ip = search('node', search_query)[0]['ipaddress']
 ```
 
 Or in any other scripting scenario by parsing the JSON file you can find in `%temp%\kitchen\nodes\default-windows-mssqlserver.json`.
+
+MSSQL is configured to listen to all IPs (i.e. NAT and Private) on TCP 1433.
+
+## Authentication
+The default username password is `sa`:`Vagrant!`, you can change the default password using the attributes in the [test_kitchen_mssql_helpers cookbook](https://github.com/Sam-Martin/test_kitchen_mssql_template)
+
 
 # Dependencies
 ## kitchen-nodes
