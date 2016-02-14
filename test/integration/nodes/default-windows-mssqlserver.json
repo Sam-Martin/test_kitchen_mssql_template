@@ -1,0 +1,17 @@
+{
+  "id": "default-windows-mssqlserver",
+  "chef_environment": "_default",
+  "automatic": {
+    "ipaddress": "172.28.128.22",
+    "platform": "windows",
+    "fqdn": "WIN-890I24U3LD9",
+    "recipes": [
+      "test_kitchen_mssql_helpers::server"
+    ]
+  },
+  "normal": {
+  },
+  "run_list": [
+    "test_kitchen_mssql_helpers::server"
+  ]
+}

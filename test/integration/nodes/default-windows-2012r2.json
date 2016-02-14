@@ -1,0 +1,17 @@
+{
+  "id": "default-windows-2012r2",
+  "chef_environment": "_default",
+  "automatic": {
+    "ipaddress": "172.28.128.9",
+    "platform": "windows",
+    "fqdn": "WIN-CLH02HPCNOB",
+    "recipes": [
+
+    ]
+  },
+  "normal": {
+  },
+  "run_list": [
+
+  ]
+}

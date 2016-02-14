@@ -1,0 +1,12 @@
+DEPENDENCIES
+  test_kitchen_mssql_helpers
+    path: ../test_kitchen_mssql_helpers
+
+GRAPH
+  boxstarter (1.1.7)
+  chef-sugar (3.3.0)
+  firewall (2.4.0)
+    chef-sugar (>= 0.0.0)
+  test_kitchen_mssql_helpers (0.1.1)
+    boxstarter (>= 0.0.0)
+    firewall (>= 0.0.0)
