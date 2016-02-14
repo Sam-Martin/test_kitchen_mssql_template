@@ -23,7 +23,7 @@ Or in any other scripting scenario by parsing the JSON file you can find in `%te
 MSSQL is configured to listen to all IPs (i.e. NAT and Private) on TCP 1433.
 
 ## Authentication
-The default username password is `sa`:`Vagrant!`, you can change the default password using the attributes in the [test_kitchen_mssql_helpers cookbook](https://github.com/Sam-Martin/test_kitchen_mssql_template)
+The default username and password are `sa` and `Vagrant!`, you can change the default password using the attributes in the [test_kitchen_mssql_helpers cookbook](https://github.com/Sam-Martin/test_kitchen_mssql_template)
 
 
 # Dependencies
