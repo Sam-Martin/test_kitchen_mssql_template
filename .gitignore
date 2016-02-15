@@ -1,2 +1,2 @@
 .kitchen/
-test/integration/nodes
+test/integration/nodes/
